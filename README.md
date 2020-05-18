@@ -22,7 +22,7 @@ Step by step instructions for installing Pi-hole on a Raspberry PI Zero W with A
 # Enable UART
 enable_uart=1
 ```
-6. Create file `D:\wpa_supplicant.conf` to configue WiFi with the content below. Replace _YOURSSID_ and _YOURPASSWORD_ accodingly:
+6. Create file `D:\wpa_supplicant.conf` to configue WiFi with the content below. Replace _YOURSSID_ and _YOURPASSWORD_ accordingly:
 ```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
@@ -35,7 +35,7 @@ network={
 }
 ```
 7. Create file `D:\ssh` to enable SSH. The file shall be empty.
-8. Eject the SD Card safetly from the laptop.
+8. Eject the SD Card safely from the laptop.
 9. Plug the SD Card into the Raspberry Pi.
 10. Power the Raspberry Pi on.
 11. SSH to the Raspberry Pi using Putty. The default password is `raspberry`.
@@ -59,7 +59,7 @@ sudo reboot
 ```
 putty.exe pi@raspberrypi.local
 ```
-2. Change the hostname with  `sudo nano /etc/hostname` file. The file has only one word: `raspberrypi`. Replace it with `pi-hole`.
+2. Change the hostname with `sudo nano /etc/hostname` file. The file has only one word: `raspberrypi`. Replace it with `pi-hole`.
 3. Change the hostname with `sudo nano /etc/hosts` file.  Replace `raspberrypi` with `pi-hole` (last line):
 ```
 27.0.0.1       localhost
@@ -157,14 +157,14 @@ Successfully installed RPI.GPIO-0.7.0
 
 ## Install Pi-hole
 
-1. Download and run Pi-hole installer. (Screenshots)[https://learn.adafruit.com/pi-hole-ad-blocker-with-pi-zero-w/install-pi-hole]
+1. Download and run Pi-hole installer. [Screenshots](https://learn.adafruit.com/pi-hole-ad-blocker-with-pi-zero-w/install-pi-hole)
 ```
 curl -sSL https://install.pi-hole.net | bash
 ```
-2. `Ok` for intaller greetings.
+2. `Ok` for installer greetings.
 3. `OK` for Pi-hole donation screen.
 4. `Ok` for _Static IP Needed_ warning.
-5. `Google (ECS)` for Upstream DNS proider.
+5. `Google (ECS)` for Upstream DNS provider.
 6. `Ok` for third party lists.
 7. `Ok` for IPv4 and IPv6.
 8. `Yes` for IP address `192.168.0.2/24` and gateway `192.168.0.1`.
@@ -173,7 +173,7 @@ curl -sSL https://install.pi-hole.net | bash
 11. `(*) On (Recommended)` and `Ok` for installing web admin interface.
 12. `(*) On (Recommended)` and `Ok` for installing web server (lighttpd).
 13. `(*) On (Recommended)` and `Ok` for logging queries.
-14. `(*) 0 Show everything` and `Ok` for privace mode.
+14. `(*) 0 Show everything` and `Ok` for privacy mode.
 15. Test the [web admin interface](http://pi-hole.local/admin/index.php). Note the generated password, e.g., _MYq2XsXX_.
 
 ## Install Mini PiTFT
